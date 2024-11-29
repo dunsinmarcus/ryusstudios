@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a8f043ba81.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#"><img src="ryuslogo3.png" class="ryuslogo" alt="Ryus logo" style="width: 150px; height: 100px;"></a>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="https://instagram.com/ryus_studios">
+              <div class="nav-item">
+                <i class="fa-brands fa-instagram nav-icon"></i>
+                <p>Instagram</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:ryusxstudios@gmail.com">
+              <div class="nav-item">
+                <i class="fa-solid fa-envelope nav-icon"></i>
+                <p>Email</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <div class="nav-item">
+                <i class="fa-solid fa-phone nav-icon"></i>
+                <p>Phone</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Flyers</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="flyers/jiggy.jpeg" alt="jiggy">
+          <p>Jiggy Trade #1</p>
+        </div>
+        <div class="card">
+          <img src="flyers/jiggy2.jpeg" alt="jiggy2">
+          <p>Jiggy Trade #2</p>
+        </div>
+        <div class="card">
+          <img src="flyers/jiggy3.jpeg" alt="jiggy3">
+          <p>Jiggy Trade #3</p>
+        </div>
+        <div class="card">
+            <img src="flyers/jiggy4.jpeg" alt="jiggy4">
+            <p>Jiggy Trade #4</p>
+        </div>
+        <div class="card">
+            <img src="flyers/rgx.jpeg" alt="rgx">
+            <p>RGX #1</p>
+        </div>
+        <div class="card">
+            <img src="flyers/rgx2.jpeg" alt="rgx2">
+            <p>RGX #2</p>
+        </div>
+        <div class="card">
+            <img src="flyers/victory.jpeg" alt="victory">
+            <p>Victory</p>
+        </div>
+        <div class="card">
+            <img src="flyers/olive.jpeg" alt="olive">
+            <p>Olive</p>
+        </div>
+        <div class="card">
+            <img src="flyers/help.jpeg" alt="help">
+            <p>Help</p>
+        </div>
+        <div class="card">
+          <img src="flyers/tgif.jpg" alt="tgif">
+          <p>TGIF</p>
+        </div>
+        <div class="card">
+            <img src="flyers/artplex.jpeg" alt="artplex">
+            <p>Artplex</p>
+        </div>
+        <div class="card">
+            <img src="flyers/burger.jpeg" alt="burger">
+            <p>Burger</p>
+        </div>
+        <div class="card">
+            <img src="flyers/delicious.jpeg" alt="delicious">
+            <p>Delicious</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+  
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active"); // Toggles visibility of nav links
+      });
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a8f043ba81.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#"><img src="ryuslogo3.png" class="ryuslogo" alt="Ryus logo" style="width: 150px; height: 100px;"></a>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="https://instagram.com/ryus_studios">
+              <div class="nav-item">
+                <i class="fa-brands fa-instagram nav-icon"></i>
+                <p>Instagram</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:ryusxstudios@gmail.com">
+              <div class="nav-item">
+                <i class="fa-solid fa-envelope nav-icon"></i>
+                <p>Email</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <div class="nav-item">
+                <i class="fa-solid fa-phone nav-icon"></i>
+                <p>Phone</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Posters</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="posters/smith.jpeg" alt="willsmith">
+          <p>Happy birthday, Will Smith</p>
+        </div>
+        <div class="card">
+          <img src="posters/fathers.jpeg" alt="fathersday">
+          <p>Father's Day</p>
+        </div>
+        <div class="card">
+          <img src="posters/femi.jpeg" alt="femilazarus">
+          <p>Fami Lazarus</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+  
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active"); // Toggles visibility of nav links
+      });
+    });
+  </script>
+  
+</body>
+</html>

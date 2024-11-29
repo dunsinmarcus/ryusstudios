@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryus Studios</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a8f043ba81.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#"><img src="ryuslogo3.png" class="ryuslogo" alt="Ryus logo" style="width: 150px; height: 100px;"></a>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="https://instagram.com/ryus_studios">
+              <div class="nav-item">
+                <i class="fa-brands fa-instagram nav-icon"></i>
+                <p>Instagram</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:ryusxstudios@gmail.com">
+              <div class="nav-item">
+                <i class="fa-solid fa-envelope nav-icon"></i>
+                <p>Email</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <div class="nav-item">
+                <i class="fa-solid fa-phone nav-icon"></i>
+                <p>Phone</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <section id="about">
+    <div class="container">
+      <p>I'm a Nigerian visual and graphic artist based in Lagos, passionate about creating visually captivating design solutions, and bringing ideas to life in a stunning and communicative way.</p>
+      <p class="design-visuals">Design | Visuals</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="grid">
+        <div class="card">
+          <a href="flyers.html">
+            <img src="flyers/victory.jpeg" alt="flyers">
+          </a>
+          <p>Flyers</p>
+        </div>
+        <div class="card">
+          <a href="logos.html">
+            <img src="logos/kingjoe.jpg" alt="logos">
+          </a>
+          <p>Logos</p>
+        </div>
+        <div class="card">
+          <a href="posters.html">
+            <img src="posters/smith.jpeg" alt="Posters">
+          </a>
+          <p>Posters</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="personal-project">
+    <div class="container">
+      <h2>Personal project</h2>
+        <div class="card">
+          <a href="personal-project.html">
+            <img src="pp-images/resilience.jpg" alt="personal project">
+          </a>
+        </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Have a project you'd like to discuss?</p>
+      <p>Send me an email: <button><a href="mailto:ryusxstudios@gmail.com">Email</a></button></p>
+      <p>Call phone number: 09157206545</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+  
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active"); // Toggles visibility of nav links
+      });
+    });
+  </script>  
+  
+</body>
+</html>
